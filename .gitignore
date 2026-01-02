@@ -31,3 +31,17 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Terraform
+**/.terraform/*
+**/terraform.tfstate
+**/terraform.tfstate.*
+**/crash.log
+**/crash.*.log
+
+# SSH keys
+**/*.pem
+**/id_rsa
+**/id_ed25519
+**/terraform-ec2
+**/terraform-ec2.pub
