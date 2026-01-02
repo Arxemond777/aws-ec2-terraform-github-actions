@@ -26,7 +26,7 @@ jobs:
         run: mvn -B test package
 
   deploy:
-    # деплоим только на push, не на PR
+    # deploy only for the push, not for a PR
     if: github.event_name == 'push'
     needs: build
     runs-on: ubuntu-latest
