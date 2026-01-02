@@ -1,7 +1,7 @@
 ### 1) GitHub Actions (CI) to build a jar and (optionally) a Docker image for every push to master.  
 Add the file .github/workflows/ci.yml  
 
-### 3) install terraform and aws cli (optional for windows)
+### 2) install terraform and aws cli (optional for windows)
 ```bash
 winget install -e --id Amazon.AWSCLI
 winget install -e --id Hashicorp.Terraform
@@ -16,6 +16,7 @@ terraform init
 terraform apply
 ```
 
+### 3) Add AWS and Terraform secrets to GitHub Actions
 git repository -> Settings -> Secrets and variables → Actions → New repository secret  
 ```bash
 EC2_HOST = ec2 ip  
